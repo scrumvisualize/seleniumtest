@@ -1,0 +1,30 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd" >  
+<suite allow-return-values="true" name="SeleniumTests" verbose="1" >
+  <test name="SimpleFormTest" >   			
+    <classes>
+       <class name="tests.SimpleFormTest" />
+    </classes>
+  </test> 
+   <test name="CheckboxFormTest" >   			
+    <classes>
+       <class name="tests.CheckboxFormTest" />
+    </classes>
+  </test> 
+   <test name="AlertPageTest" >   			
+    <classes>
+       <class name="tests.AlertPageTest" />
+    </classes>
+  </test>
+ <test name="DragAndDropTest" >   			
+    <classes>
+       <class name="tests.DragAndDropTest" />
+    </classes>
+  </test>
+   <test name="BMIPageTest" >   			
+    <classes>
+       <class name="tests.BMIPageTest" />
+    </classes>
+  </test>
+  
+</suite>

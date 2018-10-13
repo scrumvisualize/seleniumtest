@@ -1,0 +1,43 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<testng-results skipped="0" failed="0" total="3" passed="3">
+  <reporter-output>
+  </reporter-output>
+  <suite name="SeleniumTests" duration-ms="30341" started-at="2018-09-23T08:23:52Z" finished-at="2018-09-23T08:24:22Z">
+    <groups>
+    </groups>
+    <test name="SimpleFormTest" duration-ms="6" started-at="2018-09-23T08:23:52Z" finished-at="2018-09-23T08:23:52Z">
+    </test> <!-- SimpleFormTest -->
+    <test name="CheckboxFormTest" duration-ms="18484" started-at="2018-09-23T08:23:52Z" finished-at="2018-09-23T08:24:10Z">
+      <class name="tests.CheckboxFormTest">
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:tests.CheckboxFormTest@6e2404a0]" name="launchBrowser" is-config="true" duration-ms="5271" started-at="2018-09-23T20:23:52Z" finished-at="2018-09-23T20:23:57Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method status="PASS" signature="multipleCheckboxTest()[pri:0, instance:tests.CheckboxFormTest@6e2404a0]" name="multipleCheckboxTest" duration-ms="6874" started-at="2018-09-23T20:23:57Z" finished-at="2018-09-23T20:24:04Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- multipleCheckboxTest -->
+        <test-method status="PASS" signature="singleCheckboxTest()[pri:0, instance:tests.CheckboxFormTest@6e2404a0]" name="singleCheckboxTest" duration-ms="6327" started-at="2018-09-23T20:24:04Z" finished-at="2018-09-23T20:24:10Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- singleCheckboxTest -->
+      </class> <!-- tests.CheckboxFormTest -->
+    </test> <!-- CheckboxFormTest -->
+    <test name="AlertPageTest" duration-ms="11807" started-at="2018-09-23T08:24:10Z" finished-at="2018-09-23T08:24:22Z">
+      <class name="tests.AlertPageTest">
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:tests.AlertPageTest@39cb7ee5]" name="launchBrowser" is-config="true" duration-ms="4855" started-at="2018-09-23T20:24:10Z" finished-at="2018-09-23T20:24:15Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method status="PASS" signature="alertTestMessage()[pri:0, instance:tests.AlertPageTest@39cb7ee5]" name="alertTestMessage" duration-ms="6948" started-at="2018-09-23T20:24:15Z" finished-at="2018-09-23T20:24:22Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- alertTestMessage -->
+      </class> <!-- tests.AlertPageTest -->
+    </test> <!-- AlertPageTest -->
+    <test name="DragAndDropTest" duration-ms="2" started-at="2018-09-23T08:24:22Z" finished-at="2018-09-23T08:24:22Z">
+    </test> <!-- DragAndDropTest -->
+    <test name="BMIPageTest" duration-ms="1" started-at="2018-09-23T08:24:22Z" finished-at="2018-09-23T08:24:22Z">
+    </test> <!-- BMIPageTest -->
+  </suite> <!-- SeleniumTests -->
+</testng-results>

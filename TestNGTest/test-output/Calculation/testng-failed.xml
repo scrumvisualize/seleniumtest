@@ -1,0 +1,20 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Calculation]" allow-return-values="true">
+  <parameter name="mult" value="150.0"/>
+  <parameter name="diff" value="25"/>
+  <parameter name="div" value="6.0"/>
+  <parameter name="sum" value="35"/>
+  <parameter name="y" value="5"/>
+  <parameter name="x" value="Wonderful Things Are dons Here"/>
+  <test name="StringTest(failed)">
+    <parameter name="x" value="Wonderful Things Are dons Here"/>
+    <classes>
+      <class name="testngtest.BaseTests">
+        <methods>
+          <include name="checkWordTest" invocation-numbers="0"/>
+        </methods>
+      </class> <!-- testngtest.BaseTests -->
+    </classes>
+  </test> <!-- StringTest(failed) -->
+</suite> <!-- Failed suite [Calculation] -->

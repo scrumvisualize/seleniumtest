@@ -1,0 +1,16 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<!DOCTYPE suite SYSTEM "http://testng.org/testng-1.0.dtd">
+<suite name="Failed suite [Suite1]" parallel="none" allow-return-values="true">
+  <test name="Default test(failed)" parallel="none">
+    <classes>
+      <class name="testngtest.TestNGCalculation">
+        <methods>
+          <include name="divideTest"/>
+          <include name="subTest"/>
+          <include name="addTest"/>
+          <include name="multiplyTest"/>
+        </methods>
+      </class> <!-- testngtest.TestNGCalculation -->
+    </classes>
+  </test> <!-- Default test(failed) -->
+</suite> <!-- Failed suite [Suite1] -->
