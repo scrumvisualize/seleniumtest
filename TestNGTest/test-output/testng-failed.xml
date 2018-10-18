@@ -8,16 +8,21 @@
           <include name="launchBrowser"/>
         </methods>
       </class> <!-- tests.SimpleFormTest -->
-      <class name="tests.BMIPageTest">
+      <class name="tests.FileUploadTest">
         <methods>
           <include name="launchBrowser"/>
         </methods>
-      </class> <!-- tests.BMIPageTest -->
+      </class> <!-- tests.FileUploadTest -->
       <class name="tests.CheckboxFormTest">
         <methods>
           <include name="launchBrowser"/>
         </methods>
       </class> <!-- tests.CheckboxFormTest -->
+      <class name="tests.BMIPageTest">
+        <methods>
+          <include name="launchBrowser"/>
+        </methods>
+      </class> <!-- tests.BMIPageTest -->
       <class name="tests.DragAndDropTest">
         <methods>
           <include name="dragAndDropTest"/>

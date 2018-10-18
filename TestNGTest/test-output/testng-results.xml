@@ -1,43 +1,119 @@
 <?xml version="1.0" encoding="UTF-8"?>
-<testng-results skipped="0" failed="0" total="3" passed="3">
+<testng-results skipped="0" failed="1" total="7" passed="6">
   <reporter-output>
   </reporter-output>
-  <suite name="SeleniumTests" duration-ms="30341" started-at="2018-09-23T08:23:52Z" finished-at="2018-09-23T08:24:22Z">
+  <suite name="SeleniumTests" duration-ms="99190" started-at="2018-10-18T10:06:12Z" finished-at="2018-10-18T10:07:51Z">
     <groups>
     </groups>
-    <test name="SimpleFormTest" duration-ms="6" started-at="2018-09-23T08:23:52Z" finished-at="2018-09-23T08:23:52Z">
-    </test> <!-- SimpleFormTest -->
-    <test name="CheckboxFormTest" duration-ms="18484" started-at="2018-09-23T08:23:52Z" finished-at="2018-09-23T08:24:10Z">
-      <class name="tests.CheckboxFormTest">
-        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:tests.CheckboxFormTest@6e2404a0]" name="launchBrowser" is-config="true" duration-ms="5271" started-at="2018-09-23T20:23:52Z" finished-at="2018-09-23T20:23:57Z">
+    <test name="SimpleFormTest" duration-ms="21302" started-at="2018-10-18T10:06:12Z" finished-at="2018-10-18T10:06:33Z">
+      <class name="tests.SimpleFormTest">
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:tests.SimpleFormTest@bc7a22a]" name="launchBrowser" is-config="true" duration-ms="14015" started-at="2018-10-18T23:06:12Z" finished-at="2018-10-18T23:06:26Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method status="PASS" signature="multipleCheckboxTest()[pri:0, instance:tests.CheckboxFormTest@6e2404a0]" name="multipleCheckboxTest" duration-ms="6874" started-at="2018-09-23T20:23:57Z" finished-at="2018-09-23T20:24:04Z">
+        <test-method status="PASS" signature="showMessageTest()[pri:0, instance:tests.SimpleFormTest@bc7a22a]" name="showMessageTest" duration-ms="7287" started-at="2018-10-18T23:06:26Z" finished-at="2018-10-18T23:06:33Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- showMessageTest -->
+      </class> <!-- tests.SimpleFormTest -->
+    </test> <!-- SimpleFormTest -->
+    <test name="CheckboxFormTest" duration-ms="19142" started-at="2018-10-18T10:06:33Z" finished-at="2018-10-18T10:06:53Z">
+      <class name="tests.CheckboxFormTest">
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:tests.CheckboxFormTest@13fd3d8]" name="launchBrowser" is-config="true" duration-ms="4507" started-at="2018-10-18T23:06:33Z" finished-at="2018-10-18T23:06:38Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method status="PASS" signature="multipleCheckboxTest()[pri:0, instance:tests.CheckboxFormTest@13fd3d8]" name="multipleCheckboxTest" duration-ms="7504" started-at="2018-10-18T23:06:38Z" finished-at="2018-10-18T23:06:45Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- multipleCheckboxTest -->
-        <test-method status="PASS" signature="singleCheckboxTest()[pri:0, instance:tests.CheckboxFormTest@6e2404a0]" name="singleCheckboxTest" duration-ms="6327" started-at="2018-09-23T20:24:04Z" finished-at="2018-09-23T20:24:10Z">
+        <test-method status="PASS" signature="singleCheckboxTest()[pri:0, instance:tests.CheckboxFormTest@13fd3d8]" name="singleCheckboxTest" duration-ms="7131" started-at="2018-10-18T23:06:45Z" finished-at="2018-10-18T23:06:53Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- singleCheckboxTest -->
       </class> <!-- tests.CheckboxFormTest -->
     </test> <!-- CheckboxFormTest -->
-    <test name="AlertPageTest" duration-ms="11807" started-at="2018-09-23T08:24:10Z" finished-at="2018-09-23T08:24:22Z">
+    <test name="AlertPageTest" duration-ms="13292" started-at="2018-10-18T10:06:53Z" finished-at="2018-10-18T10:07:06Z">
       <class name="tests.AlertPageTest">
-        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:tests.AlertPageTest@39cb7ee5]" name="launchBrowser" is-config="true" duration-ms="4855" started-at="2018-09-23T20:24:10Z" finished-at="2018-09-23T20:24:15Z">
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:tests.AlertPageTest@cd7e6ef]" name="launchBrowser" is-config="true" duration-ms="4608" started-at="2018-10-18T23:06:53Z" finished-at="2018-10-18T23:06:57Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- launchBrowser -->
-        <test-method status="PASS" signature="alertTestMessage()[pri:0, instance:tests.AlertPageTest@39cb7ee5]" name="alertTestMessage" duration-ms="6948" started-at="2018-09-23T20:24:15Z" finished-at="2018-09-23T20:24:22Z">
+        <test-method status="PASS" signature="alertTestMessage()[pri:0, instance:tests.AlertPageTest@cd7e6ef]" name="alertTestMessage" duration-ms="8684" started-at="2018-10-18T23:06:57Z" finished-at="2018-10-18T23:07:06Z">
           <reporter-output>
           </reporter-output>
         </test-method> <!-- alertTestMessage -->
       </class> <!-- tests.AlertPageTest -->
     </test> <!-- AlertPageTest -->
-    <test name="DragAndDropTest" duration-ms="2" started-at="2018-09-23T08:24:22Z" finished-at="2018-09-23T08:24:22Z">
+    <test name="DragAndDropTest" duration-ms="16051" started-at="2018-10-18T10:07:06Z" finished-at="2018-10-18T10:07:22Z">
+      <class name="tests.DragAndDropTest">
+        <test-method status="FAIL" signature="dragAndDropTest()[pri:0, instance:tests.DragAndDropTest@3bd8928e]" name="dragAndDropTest" duration-ms="16048" started-at="2018-10-18T23:07:06Z" finished-at="2018-10-18T23:07:22Z">
+          <exception class="java.lang.AssertionError">
+            <message>
+              <![CDATA[expected [true] but found [false]]]>
+            </message>
+            <full-stacktrace>
+              <![CDATA[java.lang.AssertionError: expected [true] but found [false]
+	at org.testng.Assert.fail(Assert.java:94)
+	at org.testng.Assert.failNotEquals(Assert.java:494)
+	at org.testng.Assert.assertTrue(Assert.java:42)
+	at org.testng.Assert.assertTrue(Assert.java:52)
+	at tests.DragAndDropTest.dragAndDropTest(DragAndDropTest.java:29)
+	at sun.reflect.NativeMethodAccessorImpl.invoke0(Native Method)
+	at sun.reflect.NativeMethodAccessorImpl.invoke(Unknown Source)
+	at sun.reflect.DelegatingMethodAccessorImpl.invoke(Unknown Source)
+	at java.lang.reflect.Method.invoke(Unknown Source)
+	at org.testng.internal.MethodInvocationHelper.invokeMethod(MethodInvocationHelper.java:84)
+	at org.testng.internal.Invoker.invokeMethod(Invoker.java:714)
+	at org.testng.internal.Invoker.invokeTestMethod(Invoker.java:901)
+	at org.testng.internal.Invoker.invokeTestMethods(Invoker.java:1231)
+	at org.testng.internal.TestMethodWorker.invokeTestMethods(TestMethodWorker.java:127)
+	at org.testng.internal.TestMethodWorker.run(TestMethodWorker.java:111)
+	at org.testng.TestRunner.privateRun(TestRunner.java:767)
+	at org.testng.TestRunner.run(TestRunner.java:617)
+	at org.testng.SuiteRunner.runTest(SuiteRunner.java:334)
+	at org.testng.SuiteRunner.runSequentially(SuiteRunner.java:329)
+	at org.testng.SuiteRunner.privateRun(SuiteRunner.java:291)
+	at org.testng.SuiteRunner.run(SuiteRunner.java:240)
+	at org.testng.SuiteRunnerWorker.runSuite(SuiteRunnerWorker.java:52)
+	at org.testng.SuiteRunnerWorker.run(SuiteRunnerWorker.java:86)
+	at org.testng.TestNG.runSuitesSequentially(TestNG.java:1224)
+	at org.testng.TestNG.runSuitesLocally(TestNG.java:1149)
+	at org.testng.TestNG.run(TestNG.java:1057)
+	at org.testng.remote.AbstractRemoteTestNG.run(AbstractRemoteTestNG.java:132)
+	at org.testng.remote.RemoteTestNG.initAndRun(RemoteTestNG.java:230)
+	at org.testng.remote.RemoteTestNG.main(RemoteTestNG.java:76)
+]]>
+            </full-stacktrace>
+          </exception> <!-- java.lang.AssertionError -->
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- dragAndDropTest -->
+      </class> <!-- tests.DragAndDropTest -->
     </test> <!-- DragAndDropTest -->
-    <test name="BMIPageTest" duration-ms="1" started-at="2018-09-23T08:24:22Z" finished-at="2018-09-23T08:24:22Z">
+    <test name="BMIPageTest" duration-ms="14268" started-at="2018-10-18T10:07:22Z" finished-at="2018-10-18T10:07:36Z">
+      <class name="tests.BMIPageTest">
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:tests.BMIPageTest@73aeff7d]" name="launchBrowser" is-config="true" duration-ms="8500" started-at="2018-10-18T23:07:22Z" finished-at="2018-10-18T23:07:30Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method status="PASS" signature="bmiCalculatorTest()[pri:0, instance:tests.BMIPageTest@73aeff7d]" name="bmiCalculatorTest" duration-ms="5765" started-at="2018-10-18T23:07:30Z" finished-at="2018-10-18T23:07:36Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- bmiCalculatorTest -->
+      </class> <!-- tests.BMIPageTest -->
     </test> <!-- BMIPageTest -->
+    <test name="FileUploadTest" duration-ms="15106" started-at="2018-10-18T10:07:36Z" finished-at="2018-10-18T10:07:51Z">
+      <class name="tests.FileUploadTest">
+        <test-method status="PASS" signature="launchBrowser()[pri:0, instance:tests.FileUploadTest@45f676cb]" name="launchBrowser" is-config="true" duration-ms="4519" started-at="2018-10-18T23:07:36Z" finished-at="2018-10-18T23:07:41Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- launchBrowser -->
+        <test-method status="PASS" signature="fileUploadTest()[pri:0, instance:tests.FileUploadTest@45f676cb]" name="fileUploadTest" duration-ms="10585" started-at="2018-10-18T23:07:41Z" finished-at="2018-10-18T23:07:51Z">
+          <reporter-output>
+          </reporter-output>
+        </test-method> <!-- fileUploadTest -->
+      </class> <!-- tests.FileUploadTest -->
+    </test> <!-- FileUploadTest -->
   </suite> <!-- SeleniumTests -->
 </testng-results>

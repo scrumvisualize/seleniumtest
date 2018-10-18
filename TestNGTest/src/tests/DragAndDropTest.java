@@ -15,7 +15,7 @@ import pages.DragAndDrop;
 
 public class DragAndDropTest {
 	
-	@Test (enabled=false)
+	@Test (enabled=true)
 	public void dragAndDropTest(){
 		System.setProperty("webdriver.chrome.driver", "C:\\Vinod\\Selenium\\chromedriver.exe");	
 		WebDriver driver = new ChromeDriver();		

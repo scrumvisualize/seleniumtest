@@ -23,7 +23,7 @@
     <div class="top-banner-root">
       <span class="top-banner-title-font">Test results</span>
       <br/>
-      <span class="top-banner-font-1">1 suite</span>
+      <span class="top-banner-font-1">1 suite, 1 failed test</span>
     </div> <!-- top-banner-root -->
     <div class="navigator-root">
       <div class="navigator-suite-header">
@@ -37,7 +37,7 @@
         <div class="rounded-window">
           <div class="suite-header light-rounded-window-top">
             <a href="#" class="navigator-link" panel-name="suite-SeleniumTests">
-              <span class="suite-name border-passed">SeleniumTests</span>
+              <span class="suite-name border-failed">SeleniumTests</span>
             </a> <!-- navigator-link -->
           </div> <!-- suite-header light-rounded-window-top -->
           <div class="navigator-suite-content">
@@ -48,12 +48,12 @@
               <ul>
                 <li>
                   <a href="#" class="navigator-link " panel-name="test-xml-SeleniumTests">
-                    <span>C:\Vinod\Project\TestNGTest\test-output\testng.xml</span>
+                    <span>C:\Users\admin\selenium\TestNGTest\test-output\testng.xml</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
                   <a href="#" class="navigator-link " panel-name="testlist-SeleniumTests">
-                    <span class="test-stats">5 tests</span>
+                    <span class="test-stats">6 tests</span>
                   </a> <!-- navigator-link  -->
                 </li>
                 <li>
@@ -90,7 +90,21 @@
               <div class="suite-section-content">
                 <ul>
                   <li>
-                    <span class="method-stats">3 methods,   3 passed</span>
+                    <span class="method-stats">7 methods, 1 failed,   6 passed</span>
+                  </li>
+                  <li>
+                    <span class="method-list-title failed">Failed methods</span>
+                    <span class="show-or-hide-methods failed">
+                      <a href="#" panel-name="suite-SeleniumTests" class="hide-methods failed suite-SeleniumTests"> (hide)</a> <!-- hide-methods failed suite-SeleniumTests -->
+                      <a href="#" panel-name="suite-SeleniumTests" class="show-methods failed suite-SeleniumTests"> (show)</a> <!-- show-methods failed suite-SeleniumTests -->
+                    </span>
+                    <div class="method-list-content failed suite-SeleniumTests">
+                      <span>
+                        <img width="3%" src="failed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SeleniumTests" title="tests.DragAndDropTest" hash-for-method="dragAndDropTest">dragAndDropTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                    </div> <!-- method-list-content failed suite-SeleniumTests -->
                   </li>
                   <li>
                     <span class="method-list-title passed">Passed methods</span>
@@ -106,7 +120,22 @@
                       <br/>
                       <span>
                         <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SeleniumTests" title="tests.BMIPageTest" hash-for-method="bmiCalculatorTest">bmiCalculatorTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SeleniumTests" title="tests.FileUploadTest" hash-for-method="fileUploadTest">fileUploadTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
                         <a href="#" class="method navigator-link" panel-name="suite-SeleniumTests" title="tests.CheckboxFormTest" hash-for-method="multipleCheckboxTest">multipleCheckboxTest</a> <!-- method navigator-link -->
+                      </span>
+                      <br/>
+                      <span>
+                        <img width="3%" src="passed.png"/>
+                        <a href="#" class="method navigator-link" panel-name="suite-SeleniumTests" title="tests.SimpleFormTest" hash-for-method="showMessageTest">showMessageTest</a> <!-- method navigator-link -->
                       </span>
                       <br/>
                       <span>
@@ -126,6 +155,70 @@
     <div class="wrapper">
       <div class="main-panel-root">
         <div panel-name="suite-SeleniumTests" class="panel SeleniumTests">
+          <div class="suite-SeleniumTests-class-failed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="failed.png"/>
+              <span class="class-name">tests.DragAndDropTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="dragAndDropTest">
+                  </a> <!-- dragAndDropTest -->
+                  <span class="method-name">dragAndDropTest</span>
+                  <div class="stack-trace">java.lang.AssertionError: expected [true] but found [false]
+	at tests.DragAndDropTest.dragAndDropTest(DragAndDropTest.java:29)
+... Removed 28 stack frames
+</div> <!-- stack-trace -->
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SeleniumTests-class-failed -->
+          <div class="suite-SeleniumTests-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.SimpleFormTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="showMessageTest">
+                  </a> <!-- showMessageTest -->
+                  <span class="method-name">showMessageTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SeleniumTests-class-passed -->
+          <div class="suite-SeleniumTests-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.FileUploadTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="fileUploadTest">
+                  </a> <!-- fileUploadTest -->
+                  <span class="method-name">fileUploadTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SeleniumTests-class-passed -->
+          <div class="suite-SeleniumTests-class-passed">
+            <div class="main-panel-header rounded-window-top">
+              <img src="passed.png"/>
+              <span class="class-name">tests.BMIPageTest</span>
+            </div> <!-- main-panel-header rounded-window-top -->
+            <div class="main-panel-content rounded-window-bottom">
+              <div class="method">
+                <div class="method-content">
+                  <a name="bmiCalculatorTest">
+                  </a> <!-- bmiCalculatorTest -->
+                  <span class="method-name">bmiCalculatorTest</span>
+                </div> <!-- method-content -->
+              </div> <!-- method -->
+            </div> <!-- main-panel-content rounded-window-bottom -->
+          </div> <!-- suite-SeleniumTests-class-passed -->
           <div class="suite-SeleniumTests-class-passed">
             <div class="main-panel-header rounded-window-top">
               <img src="passed.png"/>
@@ -166,7 +259,7 @@
         </div> <!-- panel SeleniumTests -->
         <div panel-name="test-xml-SeleniumTests" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">C:\Vinod\Project\TestNGTest\test-output\testng.xml</span>
+            <span class="header-content">C:\Users\admin\selenium\TestNGTest\test-output\testng.xml</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <pre>
@@ -198,6 +291,11 @@
       &lt;class name=&quot;tests.BMIPageTest&quot;/&gt;
     &lt;/classes&gt;
   &lt;/test&gt; &lt;!-- BMIPageTest --&gt;
+  &lt;test name=&quot;FileUploadTest&quot;&gt;
+    &lt;classes&gt;
+      &lt;class name=&quot;tests.FileUploadTest&quot;/&gt;
+    &lt;/classes&gt;
+  &lt;/test&gt; &lt;!-- FileUploadTest --&gt;
 &lt;/suite&gt; &lt;!-- SeleniumTests --&gt;
             </pre>
           </div> <!-- main-panel-content rounded-window-bottom -->
@@ -223,6 +321,9 @@
               <li>
                 <span class="test-name">BMIPageTest (1 class)</span>
               </li>
+              <li>
+                <span class="test-name">FileUploadTest (1 class)</span>
+              </li>
             </ul>
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->
@@ -247,24 +348,40 @@ data.addColumn('number', 'Number');
 data.addColumn('string', 'Method');
 data.addColumn('string', 'Class');
 data.addColumn('number', 'Time (ms)');
-data.addRows(3);
+data.addRows(7);
 data.setCell(0, 0, 0)
-data.setCell(0, 1, 'alertTestMessage')
-data.setCell(0, 2, 'tests.AlertPageTest')
-data.setCell(0, 3, 6948);
+data.setCell(0, 1, 'dragAndDropTest')
+data.setCell(0, 2, 'tests.DragAndDropTest')
+data.setCell(0, 3, 16048);
 data.setCell(1, 0, 1)
-data.setCell(1, 1, 'multipleCheckboxTest')
-data.setCell(1, 2, 'tests.CheckboxFormTest')
-data.setCell(1, 3, 6874);
+data.setCell(1, 1, 'fileUploadTest')
+data.setCell(1, 2, 'tests.FileUploadTest')
+data.setCell(1, 3, 10585);
 data.setCell(2, 0, 2)
-data.setCell(2, 1, 'singleCheckboxTest')
-data.setCell(2, 2, 'tests.CheckboxFormTest')
-data.setCell(2, 3, 6327);
+data.setCell(2, 1, 'alertTestMessage')
+data.setCell(2, 2, 'tests.AlertPageTest')
+data.setCell(2, 3, 8684);
+data.setCell(3, 0, 3)
+data.setCell(3, 1, 'multipleCheckboxTest')
+data.setCell(3, 2, 'tests.CheckboxFormTest')
+data.setCell(3, 3, 7504);
+data.setCell(4, 0, 4)
+data.setCell(4, 1, 'showMessageTest')
+data.setCell(4, 2, 'tests.SimpleFormTest')
+data.setCell(4, 3, 7287);
+data.setCell(5, 0, 5)
+data.setCell(5, 1, 'singleCheckboxTest')
+data.setCell(5, 2, 'tests.CheckboxFormTest')
+data.setCell(5, 3, 7131);
+data.setCell(6, 0, 6)
+data.setCell(6, 1, 'bmiCalculatorTest')
+data.setCell(6, 2, 'tests.BMIPageTest')
+data.setCell(6, 3, 5765);
 window.suiteTableData['SeleniumTests']= { tableData: data, tableDiv: 'times-div-SeleniumTests'}
 return data;
 }
               </script>
-              <span class="suite-total-time">Total running time: 20 seconds</span>
+              <span class="suite-total-time">Total running time: 1 minutes</span>
               <div id="times-div-SeleniumTests">
               </div> <!-- times-div-SeleniumTests -->
             </div> <!-- times-div -->
@@ -279,29 +396,13 @@ return data;
         </div> <!-- panel -->
         <div panel-name="ignored-methods-SeleniumTests" class="panel">
           <div class="main-panel-header rounded-window-top">
-            <span class="header-content">4 ignored methods</span>
+            <span class="header-content">1 ignored method</span>
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="ignored-class-div">
               <span class="ignored-class-name">tests.SimpleFormTest</span>
               <div class="ignored-methods-div">
                 <span class="ignored-method-name">calculateTotal</span>
-                <br/>
-                <span class="ignored-method-name">showMessageTest</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">tests.BMIPageTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">bmiCalculatorTest</span>
-                <br/>
-              </div> <!-- ignored-methods-div -->
-            </div> <!-- ignored-class-div -->
-            <div class="ignored-class-div">
-              <span class="ignored-class-name">tests.DragAndDropTest</span>
-              <div class="ignored-methods-div">
-                <span class="ignored-method-name">dragAndDropTest</span>
                 <br/>
               </div> <!-- ignored-methods-div -->
             </div> <!-- ignored-class-div -->
@@ -313,29 +414,71 @@ return data;
           </div> <!-- main-panel-header rounded-window-top -->
           <div class="main-panel-content rounded-window-bottom">
             <div class="chronological-class">
-              <div class="chronological-class-name">tests.CheckboxFormTest</div> <!-- chronological-class-name -->
+              <div class="chronological-class-name">tests.SimpleFormTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">launchBrowser</span>
                 <span class="method-start">0 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
+                <span class="method-name">showMessageTest</span>
+                <span class="method-start">14015 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.CheckboxFormTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">launchBrowser</span>
+                <span class="method-start">21317 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
                 <span class="method-name">multipleCheckboxTest</span>
-                <span class="method-start">5273 ms</span>
+                <span class="method-start">25824 ms</span>
               </div> <!-- test-method -->
               <div class="test-method">
                 <span class="method-name">singleCheckboxTest</span>
-                <span class="method-start">12150 ms</span>
+                <span class="method-start">33328 ms</span>
               </div> <!-- test-method -->
             </div> <!-- chronological-class -->
             <div class="chronological-class">
               <div class="chronological-class-name">tests.AlertPageTest</div> <!-- chronological-class-name -->
               <div class="configuration-class before">
                 <span class="method-name">launchBrowser</span>
-                <span class="method-start">18488 ms</span>
+                <span class="method-start">40459 ms</span>
               </div> <!-- configuration-class before -->
               <div class="test-method">
                 <span class="method-name">alertTestMessage</span>
-                <span class="method-start">23343 ms</span>
+                <span class="method-start">45067 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.DragAndDropTest</div> <!-- chronological-class-name -->
+              <div class="test-method">
+                <img src="failed.png">
+                </img>
+                <span class="method-name">dragAndDropTest</span>
+                <span class="method-start">53751 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.BMIPageTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">launchBrowser</span>
+                <span class="method-start">69810 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">bmiCalculatorTest</span>
+                <span class="method-start">78310 ms</span>
+              </div> <!-- test-method -->
+            </div> <!-- chronological-class -->
+            <div class="chronological-class">
+              <div class="chronological-class-name">tests.FileUploadTest</div> <!-- chronological-class-name -->
+              <div class="configuration-class before">
+                <span class="method-name">launchBrowser</span>
+                <span class="method-start">84086 ms</span>
+              </div> <!-- configuration-class before -->
+              <div class="test-method">
+                <span class="method-name">fileUploadTest</span>
+                <span class="method-start">88605 ms</span>
               </div> <!-- test-method -->
           </div> <!-- main-panel-content rounded-window-bottom -->
         </div> <!-- panel -->

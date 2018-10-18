@@ -26,5 +26,10 @@
        <class name="tests.BMIPageTest" />
     </classes>
   </test>
+   <test name="FileUploadTest" >   			
+    <classes>
+       <class name="tests.FileUploadTest" />
+    </classes>
+  </test>
   
 </suite>

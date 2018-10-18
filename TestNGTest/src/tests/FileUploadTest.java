@@ -4,45 +4,42 @@ import java.util.concurrent.TimeUnit;
 
 import org.openqa.selenium.WebDriver;
 import org.openqa.selenium.chrome.ChromeDriver;
+import org.openqa.selenium.support.ui.WebDriverWait;
 import org.testng.Assert;
 import org.testng.annotations.BeforeClass;
 import org.testng.annotations.Test;
 
-import pages.BMIPage;
+import pages.FileUpload;
 
-public class BMIPageTest {
+public class FileUploadTest {
 	@BeforeClass
 	public void launchBrowser(){
 	System.setProperty("webdriver.chrome.driver", "C:\\Vinod\\Selenium\\chromedriver.exe");	
 	WebDriver driver = new ChromeDriver();
-	System.out.println("Testing the Simple Form....");	
+	System.out.println("Testing the CheckboxDemo...");	
 	driver.manage().window().maximize();
 	driver.manage().timeouts().implicitlyWait(5, TimeUnit.SECONDS);
 	try {
-		Thread.sleep(5000);
+		Thread.sleep(1000);
 	} catch (InterruptedException e) {
-		// TODO Auto-generated catch block
+		// Auto-generated catch block
 		e.printStackTrace();
 		}
 	}
 	
 	@Test(enabled=true)
-	public void bmiCalculatorTest(){
+	public void fileUploadTest(){		
+		String url = "https://encodable.com/uploaddemo/";
 		WebDriver driver = new ChromeDriver();
-		driver.get("https://elementinn.com/MyFirstJavaTest/bmi.jsp");
-		BMIPage bmiPage = new BMIPage(driver);
-		bmiPage.setInputWeight("79");
-		bmiPage.setInputHeight("172");
-		bmiPage.clickBMIButton();
-		String bmiValue = bmiPage.displayBMIValue();		
-		try{
-			double bmiDoublevalue = Double.parseDouble(bmiValue); 
-			Assert.assertEquals(bmiDoublevalue, 26.70);			
-		 }catch(NumberFormatException ex){ // handle your exception
-			 ex.printStackTrace();  
-		}
-		String bmiText = bmiPage.displayBMIText();				
-		Assert.assertTrue(bmiText.contains("Over Weight"));
+		driver.get(url);
+		FileUpload fileupload = new FileUpload(driver);
+		fileupload.chooseFile();		
+		fileupload.setEmailAddress();
+		fileupload.setFirstName();
+		fileupload.beginUpload();		
+		String fileName = fileupload.getsuccessMessage();
+		System.out.println(fileName);
+		Assert.assertTrue(fileName.contains("Your upload is complete:"));
 		driver.quit();	
 		
 	}

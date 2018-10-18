@@ -27,7 +27,7 @@ public class SimpleFormTest {
 		}
 	}
 	
-	@Test (enabled=false)
+	@Test (enabled=true)
 	public void showMessageTest(){
 		WebDriver driver = new ChromeDriver();
 		driver.get("http://www.seleniumeasy.com/test/basic-first-form-demo.html");
